@@ -13,6 +13,8 @@
 
 .title {
 	font-size: x-large;
+	text-align: center;
+	justify-content: center;
 }
 
 .first-text {
@@ -39,29 +41,29 @@
 	opacity: 0.1;
 }
 
+.background-deg {
+	background: #232029;
+	background: linear-gradient(180deg,#232029 0%, #232029 100%);
+	background-size: cover;
+	background-position: center center;
+	top: 0em;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
+	opacity: 1;
+}
+
 .banner-still {
-	margin: 0em 0em 2em 0em;
+	margin: 0em 0em 0em 0em;
 	height: 20vmax;
 	width: 100%;
 	position: relative;
 	overflow: hidden;
-	background-image: url("../../images/placeholder2.png");
+	background-image: url("../../images/banner.png");
 	background-size: cover;
 	background-position: center;
 }
-
-/*.banner:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: #232029;
-	opacity: 0.7;
-	z-index: -1;
-}*/
 
 .banner-animated {
 	margin: 0em 0em 2em 0em;
@@ -75,12 +77,6 @@
 	align-items: center;
 	display: flex;
 	animation: slideshow-animation 45s infinite alternate;
-	/*background-image: url("../../images/pic01.jpg");
-	background-color: #848bf2;
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	opacity: 0.5;*/
 }
 
 .banner-animated-slide {
@@ -1905,7 +1901,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			font-family: 'Font Awesome 7 Free';
 			font-weight: 400;
 		}
 
@@ -1922,7 +1918,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Font Awesome 7 Brands';
 		}
 
 		.icon.style2 {
@@ -2335,7 +2331,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				font-family: 'Font Awesome 7 Free';
 				font-weight: 900;
 			}
 
@@ -2923,7 +2919,8 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 4em 0 0.1em 0 ;
+		padding: 2em 0 0 0 ;
+		background-color:#242336;
 	}
 
 		#header .logo {
@@ -2932,7 +2929,7 @@ input, select, textarea {
 			color: inherit;
 			font-weight: 900;
 			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
+			margin: 0 0 2em 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -3245,7 +3242,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		padding: 0em 0 6em 0 ;
+		padding: 2em 0 6em 0 ;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -3414,10 +3411,26 @@ input, select, textarea {
 		padding: 0 2.5em;
 	}
 
-		@media screen and (max-width: 736px) {
+	#wrapper > * > .inner-header {
+		width: 100%;
+		/*max-width: 68em;*/
+		max-width: 100%;
+		margin: 0 auto;
+		display: flex;
+		gap: 2em;
+		justify-content: center;
+		align-items: center;
+		padding: 2em 2.5em 0em 2.5em;
+		position: fixed;
+		top: 0;
+		z-index: 5;
+		background-color: #242336;
+	}
+
+		/*@media screen and (max-width: 736px) {
 
 			#wrapper > * > .inner {
 				padding: 0 1.25em;
 			}
 
-		}
+		}*/
