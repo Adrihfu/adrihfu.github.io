@@ -18,6 +18,12 @@
 
 .first-text {
 	text-align: center;
+	margin: 0 0 0.25em 0;
+}
+
+.date {
+	border-bottom: solid 1px #c9c9c9;
+	text-align: center;
 }
 
 .other-socials {
@@ -28,10 +34,20 @@
 	margin: 0 0 1em 0;
 }
 
-.video-center {
-	display: block;
-	margin: auto;
+
+.video {
+	border-radius: 4px;
+	border: 0;
+	display: inline-block;
+	position: relative;
 }
+	.video.center {
+		display: block;
+		margin: auto;
+		/*width: 80%;
+		height: 32em;*/
+	}
+
 
 .image-center {
 	display: block;
@@ -271,7 +287,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 10pt;
+				font-size: 11pt;
 			}
 
 		}
@@ -282,7 +298,7 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #585858;
+		color: #a8a8a8;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
@@ -301,6 +317,14 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+	}
+
+	p.center {
+		text-align: center;
+	}
+
+	p.justify {
+		text-align: justify;
 	}
 
 	h1 {
@@ -433,8 +457,18 @@ input, select, textarea {
 		margin: 2em 0;
 	}
 
+		hr.big {
+			border-bottom: solid 3px #c9c9c9;
+		}
+
 		hr.major {
 			margin: 3em 0;
+		}
+
+		hr.small {
+			margin: 1em 0;
+			width: 80%;
+			transform: translateX(12.5%);
 		}
 
 	.align-left {
